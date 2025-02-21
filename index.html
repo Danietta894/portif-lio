@@ -14,6 +14,11 @@
             --text-color: #1e293b;
             --card-background: #ffffff;
         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Arial', sans-serif;
             background-color: var(--background-color);
@@ -34,6 +39,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
         nav ul li {
             display: inline;
@@ -82,11 +88,24 @@
             padding: 1rem;
             margin-top: 20px;
         }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .projetos-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            section {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Daniella Nunes Tenório</h1>
+        <h1>Seu Nome</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -99,7 +118,7 @@
 
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p style="text-align: justify;">Sou estudante de Desenvolvimento de Software Multiplataforma na FATEC e tenho interesse na criação de soluções eficientes e bem estruturadas. Minha formação tem me proporcionado experiência com HTML, CSS, JavaScript e Python, além de conhecimentos em análise de dados e Power BI. Busco aprimorar minhas habilidades técnicas enquanto desenvolvo projetos que envolvem desenvolvimento web e análise de informações. Além da área de tecnologia, sou fascinada por meteorologia e ciências da natureza. Também gosto de explorar genealogia e descobrir mais sobre minhas raízes. Este portfólio reúne alguns dos meus projetos e estudos. Caso queira trocar ideias ou colaborar em algo, entre em contato.</p>
+        <p>Sou estudante de Desenvolvimento de Software Multiplataforma na FATEC e tenho interesse na criação de soluções eficientes e bem estruturadas. Minha formação tem me proporcionado experiência com HTML, CSS, JavaScript e Python, além de conhecimentos em análise de dados e Power BI. Busco aprimorar minhas habilidades técnicas enquanto desenvolvo projetos que envolvem desenvolvimento web e análise de informações. Além da área de tecnologia, sou fascinada por meteorologia e ciências da natureza. Também gosto de explorar genealogia e descobrir mais sobre minhas raízes. Este portfólio reúne alguns dos meus projetos e estudos. Caso queira trocar ideias ou colaborar em algo, entre em contato.</p>
     </section>
 
     <section id="projetos">
@@ -108,25 +127,14 @@
             <div class="projeto">
                 <h3>NuvenLens</h3>
                 <p>NuvenLens é uma plataforma para observadores de nuvens, permitindo o registro e análise de forma organizada. O projeto visa fornecer informações detalhadas e compartilháveis sobre formações atmosféricas.</p>
-                <a href="https://github.com/danietta894/NuvenLens" target="_blank">Ver no GitHub</a>
+                <a href="#">Ver no GitHub</a>
             </div>
             <div class="projeto">
                 <h3>Cientistas e Inventores Negros</h3>
                 <p>Este projeto busca destacar as contribuições de cientistas e inventores negros ao longo da história, promovendo visibilidade e reconhecimento. O estudo foi premiado no programa PIBID da UNIVASF e apresenta uma abordagem educacional sobre essas figuras notáveis.</p>
-                <a href="https://github.com/danietta894/CientistasNegros" target="_blank">Ver no GitHub</a>
+                <a href="#">Ver no GitHub</a>
             </div>
         </div>
-    </section>
-
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Power BI</li>
-        </ul>
     </section>
 
     <section id="contato">
